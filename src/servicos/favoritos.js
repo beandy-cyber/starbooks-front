@@ -1,6 +1,6 @@
 import axios from "axios"
 
-const favoritosAPI = axios.create({baseURL: "https://starbooks-server.onrender.com"})
+const favoritosAPI = axios.create({baseURL: "https://starbooks-server.onrender.com/favoritos"})
 
 async function getFavoritos() {
     const response = await favoritosAPI.get('/')
